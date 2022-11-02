@@ -1,0 +1,58 @@
+& begin control
+meteofilepath=/media/laylee/BIGDISK2/LPTDATA/
+direction=forward
+nestlevel=0
+& end control
+&
+& begin source
+btsim=19941023200000
+etsim=19941028200000
+btrel=19941023200000
+etrel=19941023220000
+&slonw=2.01
+&slone=2.02
+&slats=48.05
+&slatn=48.06
+slonw=2.00
+slone=2.10
+slats=48.00
+slatn=48.10
+saglb=500.0
+saglt=1000.0
+& end source
+&
+& begin particles
+particlename=Xe133
+particlenumber=10000
+molemass=133
+Vdry=0
+Awet=0
+Bwet=0       
+& end particles
+&
+& begin nest
+nestlonw=0.0
+nestlone=0.0
+nestlats=0.0
+nestlatn=0.0
+& end nest
+&
+& begin recorders
+recordernum=3
+recordertime=19941027160000
+recordernames=beijing, guangzhou, lanzhou,
+recorderlon= 48.75,	113.27,	103.66,
+recorderlat=  2.54,	 23.13,	 36.00,
+recorderagl= 10.00,	  0.00,	  0.00,
+& end recorders 
+&
+& begin outgrid
+ogridlonstart = 0.
+ogriddlon     = 0.2
+ogridnlon     = 100
+ogridlatstart = 40.
+ogriddlat     = 0.2
+ogridnlat     = 100
+ogridnagl     = 5
+ogridagls     = 10.,200.,500.,1000.,2000.,
+& end outgrid 
